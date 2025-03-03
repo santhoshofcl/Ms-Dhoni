@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Dhoni</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="high">
+
+    <header>
+        <h1 class="logo">MS Dhoni</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dhoni Hub</a>
+                    <ul class="dropdown-content">
+                        <li><a href="timeline.html">Career Timeline</a></li>
+                        <li><a href="highlights.html">Match Highlights</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="simulator.html">Captaincy Simulator</a></li>
+                <li><a href="about.html">Aobut</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="highlights">
+            <h2>🔥 Best Innings of MS Dhoni</h2>
+
+            <input type="text" id="search-bar" placeholder="🔍 Search highlights..." onkeyup="searchVideos()">
+
+            <div class="video-filter">
+                
+            </div>
+
+            <div class="video-container" id="video-container">
+                <!-- YouTube videos will be loaded here dynamically -->
+            </div>
+        </section>
+    </main>
+    <script src="assets/script.js"></script>
+</body>

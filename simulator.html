@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Dhoni</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="Home">
+
+    <header>
+        <h1 class="logo">MS Dhoni</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dhoni Hub</a>
+                    <ul class="dropdown-content">
+                        <li><a href="timeline.html">Career Timeline</a></li>
+                        <li><a href="highlights.html">Match Highlights</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="simulator.html">Captaincy Simulator</a></li>
+                <li><a href="about.html">Aobut</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="simulator" id="simulator">
+            <h2>Simulate Your Captaincy Decisions</h2>
+            <div id="scoreboard">
+                <h3>🏏 Live Scoreboard</h3>
+                <p>Captain: <span id="captain-name">You</span></p>
+                <p>Team Score: <span id="score">0</span> Runs</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+            <div id="decision-container">
+                <p id="scenario-text">Click below to start your captaincy journey!</p>
+                <div id="options" class="hidden">
+                    <button class="decision-btn" onclick="makeDecision(0)">Option 1</button>
+                    <button class="decision-btn" onclick="makeDecision(1)">Option 2</button>
+                    <button class="decision-btn" onclick="makeDecision(2)">Option 3</button>
+                </div>
+            </div>
+            <button id="simulate-decision" onclick="nextScenario()">Start Simulation</button>
+            <h3>🏆 Leaderboard</h3>
+            <ul id="leaderboard"></ul>
+        </section>
+    </main>
+    <audio id="cheer-sound" src="cheer.mp3"></audio>
+    <audio id="boo-sound" src="boo.mp3"></audio>
+    <script src="assets/script.js"></script>
+</body>
